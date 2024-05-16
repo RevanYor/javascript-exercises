@@ -1,25 +1,24 @@
 const sumAll = function(a,b) {
     if(typeof a == "number" && typeof b == "number" && a > 0 && b > 0) {
         if(a < b) {
-            let sum = a;
-            let total = 0;
-            let sumed = 0;
-            for(let i = a; i <= b; i++) {
-                sum++;
-                sumed = a + sum;
-                total = sumed + sumed;
-                final = total + ;
+            let sum = 1;
+            let suma = 0;
+            let sumed = a;
+            for(let i = a; i <b; i++) {
+                suma = sum + 1;
+                sum = suma + sumed++;
             }
-            return total;
+            return sum;
 
-        } else if(b < a) {
-            let sum = b;
-            let total = 0;
-            for(let i = b; i <= a; i++) {
-                sum++;
-                total = sum + sum;
+        } else if(a > b) {
+            let sum = 1;
+            let suma = 0;
+            let sumed = b;
+            for(let i = b; i < a; i++) {
+                suma = sum + 1;
+                sum = suma + sumed++
             }
-            return total;
+            return sum;
         }
     } else {
         return "ERROR";
