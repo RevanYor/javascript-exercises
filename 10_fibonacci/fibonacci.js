@@ -1,13 +1,12 @@
 const fibonacci = function(num) {
     let tran = Number(num);
-    let fib = 1;
+    let fib = 2;
     let total = 0;
     let arr = [];
     if(tran > 0) {
-        for(let i = 0; 2 > i; i++) {
-            total = tran -1 ;
-            arr.push(total);
-            tran--
+        for(let i = 0; num > i; i++) {
+            fib = (fib - 1) + (fib-2);
+            arr.push(fib);
         }
         return arr;
     }
